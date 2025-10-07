@@ -1,0 +1,18 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  database:
+    image: postgres:15
+    container_name: task_manager_db
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: taskmanager123admin
+      POSTGRES_DB: taskmanager
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
