@@ -14,6 +14,10 @@ const swaggerOptions = {
       {
         url: `http://localhost:${PORT}`,
         description: 'Servidor de Desenvolvimento'
+      },
+      {
+        url: 'https://task-manager-api-mkj6.onrender.com',
+        description: 'Servidor de Produção'
       }
     ],
     components: {
