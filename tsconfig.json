@@ -7,7 +7,7 @@
 
     // Environment Settings
     "module": "CommonJS",
-    "moduleResolution": "Node",
+    "moduleResolution": "node",
     "target": "ES2022",
     "types": ["node"],
 
@@ -19,6 +19,7 @@
     // Opções Estritas
     "strict": true,
     "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "noUncheckedIndexedAccess": true,
