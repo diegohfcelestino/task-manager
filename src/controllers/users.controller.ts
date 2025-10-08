@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import { UserUseCases } from '../useCases/UserUseCases';
+import { UserUseCases } from '../useCases/UserUseCases.js';
 import z from 'zod';
 
 const userUseCases = new UserUseCases();

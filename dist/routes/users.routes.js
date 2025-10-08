@@ -1,9 +1,7 @@
 import { Router } from 'express';
 import { UserController } from '../controllers/users.controller.js';
-
 const userRoutes = Router();
 const userController = new UserController();
-
 /**
  * @swagger
  * /users:
@@ -27,7 +25,6 @@ const userController = new UserController();
  *         description: Erro na requisição
  */
 userRoutes.post('/', userController.create);
-
 /**
  * @swagger
  * /users:
@@ -45,7 +42,6 @@ userRoutes.post('/', userController.create);
  *                 $ref: '#/components/schemas/User'
  */
 userRoutes.get('/', userController.findAll);
-
 /**
  * @swagger
  * /users/{id}:
@@ -70,7 +66,6 @@ userRoutes.get('/', userController.findAll);
  *         description: Usuário não encontrado
  */
 userRoutes.get('/:id', userController.findOne);
-
 /**
  * @swagger
  * /users/{id}:
@@ -101,7 +96,6 @@ userRoutes.get('/:id', userController.findOne);
  *         description: Usuário não encontrado
  */
 userRoutes.put('/:id', userController.update);
-
 /**
  * @swagger
  * /users/{id}:
@@ -122,5 +116,4 @@ userRoutes.put('/:id', userController.update);
  *         description: Usuário não encontrado
  */
 userRoutes.delete('/:id', userController.delete);
-
 export { userRoutes };

@@ -1,38 +1,16 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    // File Layout
-    "rootDir": "./src",
-    "outDir": "./dist",
-
-    // Environment Settings
-    "module": "ESNext",
-    "moduleResolution": "node",
     "target": "ES2022",
-    //"types": ["node"],
-
-    // Outras Saídas
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Opções Estritas
-    "strict": true,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "outDir": "./dist",
+    "rootDir": "./src",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Opções REMOVIDAS para melhor compatibilidade com ts-node-dev
-    // "verbatimModuleSyntax": true,
-    // "isolatedModules": true,
-    // "moduleDetection": "force",
-
-    // Opções Adicionais que podem ser mantidas se forem úteis
-    "jsx": "react-jsx" // Se você estiver usando React em alguma parte
+    "strict": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist"]
 }

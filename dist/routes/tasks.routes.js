@@ -1,9 +1,7 @@
 import { Router } from 'express';
 import { TaskController } from '../controllers/tasks.controller.js';
-
 const taskRoutes = Router();
 const taskController = new TaskController();
-
 /**
  * @swagger
  * /tasks:
@@ -29,7 +27,6 @@ const taskController = new TaskController();
  *         description: Usuário não encontrado
  */
 taskRoutes.post('/', taskController.create);
-
 /**
  * @swagger
  * /tasks:
@@ -47,7 +44,6 @@ taskRoutes.post('/', taskController.create);
  *                 $ref: '#/components/schemas/TaskWithUser'
  */
 taskRoutes.get('/', taskController.findAll);
-
 /**
  * @swagger
  * /tasks/{id}:
@@ -72,7 +68,6 @@ taskRoutes.get('/', taskController.findAll);
  *         description: Tarefa não encontrada
  */
 taskRoutes.get('/:id', taskController.findOne);
-
 /**
  * @swagger
  * /tasks/{id}:
@@ -110,7 +105,6 @@ taskRoutes.get('/:id', taskController.findOne);
  *         description: Tarefa não encontrada
  */
 taskRoutes.put('/:id', taskController.update);
-
 /**
  * @swagger
  * /tasks/{id}:
@@ -131,5 +125,4 @@ taskRoutes.put('/:id', taskController.update);
  *         description: Tarefa não encontrada
  */
 taskRoutes.delete('/:id', taskController.delete);
-
 export { taskRoutes };

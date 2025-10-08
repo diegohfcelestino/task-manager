@@ -1,4 +1,4 @@
-import { prisma } from '../prisma/client';
+import { prisma } from '../prisma/client.js';
 import { z } from 'zod';
 
 const taskSchema = z.object({

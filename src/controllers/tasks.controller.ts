@@ -1,6 +1,6 @@
 import type { Request, Response } from 'express';
 import z from 'zod';
-import { TaskUseCases } from '../useCases/TaskUseCases';
+import { TaskUseCases } from '../useCases/TaskUseCases.js';
 
 const taskUseCases = new TaskUseCases();
 
