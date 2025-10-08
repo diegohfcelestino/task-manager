@@ -6,10 +6,10 @@
     "outDir": "./dist",
 
     // Environment Settings
-    "module": "CommonJS",
+    "module": "ESNext",
     "moduleResolution": "node",
     "target": "ES2022",
-    "types": ["node"],
+    //"types": ["node"],
 
     // Outras Saídas
     "sourceMap": true,
