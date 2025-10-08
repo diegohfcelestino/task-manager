@@ -6,10 +6,11 @@
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "ts-node src/server.ts",
     "prisma:generate": "prisma generate",
     "prisma:studio": "prisma studio",
     "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:deploy": "npx prisma migrate deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -24,6 +25,8 @@
     "helmet": "^8.1.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
     "zod": "^4.1.12"
   },
   "devDependencies": {
@@ -34,7 +37,6 @@
     "@types/swagger-ui-express": "^4.1.8",
     "prisma": "^6.17.0",
     "ts-node-dev": "^2.0.0",
-    "tsx": "^4.20.6",
-    "typescript": "^5.9.3"
+    "tsx": "^4.20.6"
   }
 }

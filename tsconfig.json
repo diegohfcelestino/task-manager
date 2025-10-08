@@ -6,7 +6,7 @@
     "outDir": "./dist",
 
     // Environment Settings
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "Node",
     "target": "ES2022",
     "types": ["node"],
