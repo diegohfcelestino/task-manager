@@ -81,7 +81,15 @@ A API estará rodando em `http://localhost:3000`.
 
 ## 📄 Documentação da API (Swagger)
 
-A Documentação estará rodando em `http://localhost:3000/api-docs` e pode ser usada para testar todos os metodos.
+A Documentação estará rodando local em `http://localhost:3000/api-docs` e pode ser usada para testar todos os metodos.
+
+
+## Mas ela também está publicada em `https://task-manager-api-mkj6.onrender.com/api-docs`, basta acessar o link e testar online.
+
+### Ao acessar a documentação do Swagger, sempre verificar o servidor selecionado:
+
+Se estiver no local, selecione o `http://localhost:3000 - Servidor de Desenvolvimento`,
+Se estiver no produção, selecione o `https://task-manager-api-mkj6.onrender.com - Servidor de Produção`
 
 
 ## Endpoints da API
